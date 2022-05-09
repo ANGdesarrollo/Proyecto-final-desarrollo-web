@@ -1,2 +1,6 @@
 @import 'base/general-container';
-@import '_components/index';
+@import 'base/header';
+@import 'base/fixed-menu';
+@import 'components/index';
+@import 'components/home';
+@import 'base/footer';

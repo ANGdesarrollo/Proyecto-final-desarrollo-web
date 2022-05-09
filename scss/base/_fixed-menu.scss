@@ -1,0 +1,96 @@
+@import '_var.scss';
+
+
+.fixed-menu {
+  position: fixed;
+  bottom: 0;
+  left: 15px;
+
+  #btn-mas {
+    display: none;
+  }
+
+  #btn-mas:checked ~ .fixed-menu-a a {
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  #btn-mas:checked ~ .btn-mas img {
+    transform: rotate(137deg);
+
+  }
+
+  .fixed-menu-a a:hover {
+    transform: translateY(-10px) scale(1.15);
+  }
+
+  .fixed-menu-a a {
+    margin-bottom: -15px;
+    opacity: 0;
+    background: $white;
+  }
+
+  .fixed-menu-a {
+    a {
+      display: block;
+      text-decoration: none;
+      padding: 2%;
+      height: 69px;
+      width: 69px;
+      line-height: 55px;
+      text-align: center;
+      background: $black;
+      border-radius: 50%;
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+      transition: all 500ms ease;
+    }
+
+
+    img {
+      width: 70%;
+      height: auto;
+    }
+  }
+
+  .btn-mas {
+    display: block;
+    text-decoration: none;
+    padding: 2%;
+    width: 69px;
+    height: 69px;
+    line-height: 63px;
+    text-align: center;
+    background: $black;
+    border-radius: 50%;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+    transition: all 500ms ease;
+
+    img {
+      cursor: pointer;
+      width: 70%;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .fixed-menu {
+
+    .fixed-menu-a {
+      a {
+        height: 40px;
+        width: 40px;
+        line-height: 30px;
+      }
+    }
+    .btn-mas {
+      width: 40px;
+      height: 40px;
+      line-height: 35px;
+
+    }
+  }
+
+
+}
