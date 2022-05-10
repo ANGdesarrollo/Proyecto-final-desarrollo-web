@@ -2,6 +2,7 @@
 
 
 .fixed-menu {
+  z-index: 1;
   position: fixed;
   bottom: 0;
   left: 15px;
@@ -28,7 +29,7 @@
   .fixed-menu-a a {
     margin-bottom: -15px;
     opacity: 0;
-    background: $white;
+    background: transparent;
   }
 
   .fixed-menu-a {
@@ -40,9 +41,8 @@
       width: 69px;
       line-height: 55px;
       text-align: center;
-      background: $black;
+      background: transparent;
       border-radius: 50%;
-      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
       transition: all 500ms ease;
     }
 
@@ -61,9 +61,8 @@
     height: 69px;
     line-height: 63px;
     text-align: center;
-    background: $black;
+    background: transparent;
     border-radius: 50%;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
     transition: all 500ms ease;
 
     img {

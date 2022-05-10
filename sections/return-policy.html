@@ -2,9 +2,196 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GameOn | Home</title>
+    <!--    LINK CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <!--    LINK BOOTSTRAP CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--    LINK GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+
 </head>
 <body>
+
+<div class="general-return-policy-container">
+
+
+    <!--HEADER-->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html"><img src="../images/header-images/logo-header.webp"
+                                                              alt="Logo of the page"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="ul-modify navbar-nav">
+                        <li class="nav-item">
+                            <a class="animation-nav w-100 text-white nav-link active" aria-current="page"
+                               href="home.html">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="animation-nav w-100 text-white nav-link dropdown-toggle" href="#"
+                               id="navbarDropdown"
+                               role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                PRODUCTS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li class="p-2"><a class="animation-nav text-white"
+                                                   href="./products/keyboard.html">KEYBOARD</a>
+                                </li>
+                                <li class="p-2"><a class="animation-nav text-white"
+                                                   href="./products/mouse.html">MOUSE</a></li>
+                                <li class="p-2"><a class="animation-nav text-white"
+                                                   href="./products/headset.html">HEADSET</a>
+                                </li>
+                                <li class="p-2"><a class="animation-nav text-white" href="./products/gaming-chair.html">GAMING
+                                    CHAIR</a></li>
+                                <li class="p-2"><a class="animation-nav text-white"
+                                                   href="./products/notebook.html">NOTEBOOK</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="animation-nav text-white nav-link w-100" href="return-policy.html">RETURN POLICY</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="animation-nav text-white nav-link w-100" href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--BUTTONS-->
+
+    <div class="search">
+        <label for="search"></label>
+        <input id="search" type="text" placeholder="Search" required>
+        <div class="btn-search">
+            <img class="icon" src="../images/header-images/search-icon.webp" alt="Search Icon">
+        </div>
+    </div>
+
+    <div class="fixed-menu">
+        <input type="checkbox" id="btn-mas">
+        <div class="fixed-menu-a">
+            <a href="#"><img src="../images/header-images/shopping-cart.webp" alt="shopping cart"></a>
+            <a href="#"><img src="../images/header-images/header-user-a.webp" alt="log in / register"></a>
+        </div>
+        <div class="btn-mas">
+            <label for="btn-mas">
+                <img class="image-fixed-menu" src="../images/header-images/mas-icon.webp" alt="Desplegable icon +">
+            </label>
+        </div>
+    </div>
+
+    <!--MAIN CONTENT-->
+
+    <main>
+        <div class="return-policy">
+            <div class="title-return-policy">
+                <h1>Return & Exchanges</h1>
+            </div>
+
+            <div class="description-return-policy">
+
+                <p>The User can manage the return of their purchase by notifying Gaming ON within 10 days
+                    received - by means of a form, by email or telephone, accessing the section
+                    CONTACT- when:</p>
+
+                <ul>
+                    <li>You want to exercise your legal power to revoke the sale without giving cause.</li>
+                    <li>The product does not correspond to the detail of the invoice.</li>
+                    <li>The product corresponds to the detail of the invoice, but it is not what was requested in the
+                        purchase order.
+                    </li>
+                    <li>The delivered product has manufacturing defects.</li>
+                </ul>
+
+                <p>Received and inspected the product, Game ON will have 10 calendar days to review it and verify if it
+                    is
+                    meet the preceding conditions to be the possible return, in which case it will initiate the
+                    negotiations to credit the amount corresponding to the return of the amount paid by the User within
+                    the
+                    30 business days, except for delays not attributable to Game ON, such as those caused by entities
+                    bank
+                    and/or credit cards. The name and DNI and/or signature of the User at the time of delivery will be
+                    sign of conformity on receipt and it will be understood that the Product is not damaged manifests or
+                    missing at the time of delivery.</p>
+
+            </div>
+        </div>
+    </main>
+
+
+    <!--    FOOTER-->
+
+    <footer>
+        <div class="footer-abc">
+            <div class="footer-a">
+                <h3>EVERYTHING YOU ARE LOOKING FOR.</h3>
+                <img src="../images/footer-images/joystick-footer.webp" alt="Logo of a joystick">
+            </div>
+            <div class="footer-b">
+                <img id="logo-razer" src="../images/footer-images/razer-logo-footer.webp" alt="Logo of Razer">
+                <img id="logo-corsair" src="../images/footer-images/corsair-logo-footer.webp" alt="Logo of Corsair">
+                <img id="logo-logitech" src="../images/footer-images/logitech-logo-footer.webp" alt="Logo of Logitech">
+            </div>
+            <div class="footer-c">
+                <ul>
+                    <li><a href="#"><img src="../images/footer-images/location-footer.webp" alt="Icon of location"></a>
+                    </li>
+                    <li><a href="#"><img src="../images/footer-images/whatsapp-footer.webp" alt="Icon of Whatsapp"></a></li>
+                    <li><a href="#"><img src="../images/footer-images/email-footer.webp" alt="Icon of Whatsapp"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-d">
+
+            <ul class="footer-d-a">
+                <li><a class="img-footer-fb" href="#"><img src="../images/footer-images/facebook-footer.webp"
+                                                           alt="Facebook icon"></a></li>
+                <li><a class="img-footer-ig" href="#"><img src="../images/footer-images/instagram-footer.webp"
+                                                           alt="Instagram icon"></a></li>
+            </ul>
+
+
+            <div class="footer-d-b">
+                <img src="../images/footer-images/cellphone-footer.webp"
+                     alt="Cellphone image with logo of the page">
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+
+<!--LINK BOOTSTRAP JS-->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 
 </body>
 </html>

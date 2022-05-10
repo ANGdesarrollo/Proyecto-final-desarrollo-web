@@ -16,7 +16,7 @@ header {
   grid-area: header;
   background-color: #000000;
 }
-header nav div a:hover {
+header nav div .animation-nav:hover {
   border-bottom: 2px solid #29d0fd;
 }
 header nav div a {
@@ -39,6 +39,7 @@ header nav div .dropdown-menu {
 
 .search {
   position: absolute;
+  top: 10px;
   right: 5%;
   padding-top: 30px;
 }
@@ -186,6 +187,7 @@ header nav div .dropdown-menu {
   }
 }
 .fixed-menu {
+  z-index: 1;
   position: fixed;
   bottom: 0;
   left: 15px;
@@ -207,7 +209,7 @@ header nav div .dropdown-menu {
 .fixed-menu .fixed-menu-a a {
   margin-bottom: -15px;
   opacity: 0;
-  background: #fff;
+  background: transparent;
 }
 .fixed-menu .fixed-menu-a a {
   display: block;
@@ -217,9 +219,8 @@ header nav div .dropdown-menu {
   width: 69px;
   line-height: 55px;
   text-align: center;
-  background: #000000;
+  background: transparent;
   border-radius: 50%;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
   transition: all 500ms ease;
 }
 .fixed-menu .fixed-menu-a img {
@@ -234,9 +235,8 @@ header nav div .dropdown-menu {
   height: 69px;
   line-height: 63px;
   text-align: center;
-  background: #000000;
+  background: transparent;
   border-radius: 50%;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
   transition: all 500ms ease;
 }
 .fixed-menu .btn-mas img {
@@ -619,6 +619,406 @@ header nav div .dropdown-menu {
     height: auto;
   }
 }
+.general-products-container .carousel-products {
+  grid-area: carousel;
+}
+.general-products-container .products-grid {
+  position: relative;
+  grid-area: products;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-rows: auto auto 400px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-areas: "l-products l-products r-products r-products r-products r-products r-products r-products r-products r-products r-products r-products";
+}
+.general-products-container .products-grid .video-container-a {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+.general-products-container .products-grid .video-container-a video {
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.general-products-container .products-grid .left-products-part {
+  z-index: 0;
+  background-color: rgba(128, 128, 128, 0.5);
+  padding: 1%;
+  grid-area: l-products;
+}
+.general-products-container .products-grid .left-products-part h2 {
+  padding: 0 0 5% 0;
+  font-weight: bold;
+}
+.general-products-container .products-grid .left-products-part div .card-body {
+  background-color: transparent;
+}
+.general-products-container .products-grid .left-products-part div p .btn-modify {
+  border-radius: 0;
+  background-color: transparent;
+  border-right: none;
+  border-top: none;
+  border-left: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+}
+.general-products-container .products-grid .left-products-part div p a {
+  display: block;
+  border-bottom: 2px solid #fff;
+  text-decoration: none;
+  color: #fff;
+}
+.general-products-container .products-grid .right-products-part {
+  grid-area: r-products;
+  z-index: 0;
+  padding-top: 2%;
+  padding-right: 8%;
+}
+.general-products-container .products-grid .right-products-part div ul {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+}
+.general-products-container .products-grid .right-products-part div ul li:hover {
+  transform: scale(1) translateY(-10px) translateX(5px);
+  background-color: rgba(66, 73, 73, 0.95);
+}
+.general-products-container .products-grid .right-products-part div ul li {
+  margin: 1%;
+  background-color: rgba(128, 128, 128, 0.5);
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  transition: 1s;
+}
+.general-products-container .products-grid .right-products-part div ul li span {
+  display: block;
+}
+.general-products-container .products-grid .right-products-part div ul li p {
+  padding: 0.5em 0 0 0;
+}
+.general-products-container .products-grid .right-products-part div ul li .shopping-cart-products {
+  border-bottom: 0.1em solid #fff;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.general-products-container .products-grid .right-products-part div ul li .shopping-cart-products img {
+  margin-bottom: 10px;
+  width: 45px;
+  height: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .general-products-container .products-grid {
+    grid-template-rows: auto;
+    grid-template-areas: "l-products l-products l-products l-products l-products l-products l-products l-products l-products l-products l-products l-products" "r-products r-products r-products r-products r-products r-products r-products r-products r-products r-products r-products r-products";
+  }
+  .general-products-container .products-grid .right-products-part {
+    padding-right: 0;
+  }
+  .general-products-container .products-grid .right-products-part div ul li span {
+    font-size: 1.5em;
+    display: block;
+  }
+}
+@media screen and (max-width: 576px) {
+  .general-products-container .products-grid .video-container-a {
+    display: none;
+  }
+  .general-products-container .products-grid .right-products-part div ul {
+    padding: 0;
+  }
+}
+main {
+  margin: 10px;
+}
+main .title-return-policy {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+  border-bottom: 2px solid #29d0fd;
+}
+main .title-return-policy h1 {
+  font-family: "Cairo", sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+}
+main .description-return-policy {
+  font-family: "Cairo", sans-serif;
+  flex-direction: column;
+  display: flex;
+  width: 40%;
+  font-size: 1.2em;
+  margin: 2%;
+}
+main .description-return-policy li {
+  padding: 1% 0 1% 2%;
+  font-style: italic;
+}
+main .description-return-policy p {
+  line-height: 150%;
+}
+
+@media screen and (max-width: 769px) {
+  main .title-return-policy h1 {
+    font-size: 2em;
+  }
+  main .description-return-policy {
+    width: 100%;
+    font-size: 1em;
+  }
+}
+.form-container,
+button,
+input {
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+.form-container .background,
+button .background,
+input .background {
+  display: flex;
+  min-height: 100vh;
+}
+.form-container .background .container,
+button .background .container,
+input .background .container {
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 10px;
+}
+.form-container .background .container .screen:after,
+button .background .container .screen:after,
+input .background .container .screen:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+.form-container .background .container .screen,
+button .background .container .screen,
+input .background .container .screen {
+  position: relative;
+  background: #3e3e3e;
+  border-radius: 15px;
+}
+.form-container .background .container .screen .screen-header,
+button .background .container .screen .screen-header,
+input .background .container .screen .screen-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: #4d4d4f;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.form-container .background .container .screen .screen-header .screen-header-left,
+button .background .container .screen .screen-header .screen-header-left,
+input .background .container .screen .screen-header .screen-header-left {
+  margin-right: auto;
+}
+.form-container .background .container .screen .screen-header .screen-header-left .screen-header-button,
+button .background .container .screen .screen-header .screen-header-left .screen-header-button,
+input .background .container .screen .screen-header .screen-header-left .screen-header-button {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  border-radius: 8px;
+  background: #fff;
+}
+.form-container .background .container .screen .screen-header .screen-header-left .screen-header-button.close,
+button .background .container .screen .screen-header .screen-header-left .screen-header-button.close,
+input .background .container .screen .screen-header .screen-header-left .screen-header-button.close {
+  background: #ed1c6f;
+}
+.form-container .background .container .screen .screen-header .screen-header-left .screen-header-button.minimize,
+button .background .container .screen .screen-header .screen-header-left .screen-header-button.minimize,
+input .background .container .screen .screen-header .screen-header-left .screen-header-button.minimize {
+  background: #74c54f;
+}
+.form-container .background .container .screen .screen-header .screen-header-right,
+button .background .container .screen .screen-header .screen-header-right,
+input .background .container .screen .screen-header .screen-header-right {
+  display: flex;
+}
+.form-container .background .container .screen .screen-header .screen-header-right .screen-header-ellipsis,
+button .background .container .screen .screen-header .screen-header-right .screen-header-ellipsis,
+input .background .container .screen .screen-header .screen-header-right .screen-header-ellipsis {
+  width: 3px;
+  height: 3px;
+  margin-left: 2px;
+  border-radius: 8px;
+  background: #999;
+}
+.form-container .background .container .screen .screen-body,
+button .background .container .screen .screen-body,
+input .background .container .screen .screen-body {
+  display: flex;
+}
+.form-container .background .container .screen .screen-body .screen-body-item,
+button .background .container .screen .screen-body .screen-body-item,
+input .background .container .screen .screen-body .screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+.form-container .background .container .screen .screen-body .screen-body-item .app-form-group.message,
+button .background .container .screen .screen-body .screen-body-item .app-form-group.message,
+input .background .container .screen .screen-body .screen-body-item .app-form-group.message {
+  margin-top: 40px;
+}
+.form-container .background .container .screen .screen-body .screen-body-item .app-form-group,
+button .background .container .screen .screen-body .screen-body-item .app-form-group,
+input .background .container .screen .screen-body .screen-body-item .app-form-group {
+  margin-bottom: 15px;
+}
+.form-container .background .container .screen .screen-body .screen-body-item .app-form-group.buttons,
+button .background .container .screen .screen-body .screen-body-item .app-form-group.buttons,
+input .background .container .screen .screen-body .screen-body-item .app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+.form-container .background .container .screen .screen-body .screen-body-item .app-form-control,
+button .background .container .screen .screen-body .screen-body-item .app-form-control,
+input .background .container .screen .screen-body .screen-body-item .app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #999;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.form-container .background .container .screen .screen-body .screen-body-item .app-form-control::-moz-placeholder,
+button .background .container .screen .screen-body .screen-body-item .app-form-control::-moz-placeholder,
+input .background .container .screen .screen-body .screen-body-item .app-form-control::-moz-placeholder {
+  color: #999;
+}
+.form-container .background .container .screen .screen-body .screen-body-item .app-form-control:-ms-input-placeholder,
+button .background .container .screen .screen-body .screen-body-item .app-form-control:-ms-input-placeholder,
+input .background .container .screen .screen-body .screen-body-item .app-form-control:-ms-input-placeholder {
+  color: #999;
+}
+.form-container .background .container .screen .screen-body .screen-body-item .app-form-control:focus,
+button .background .container .screen .screen-body .screen-body-item .app-form-control:focus,
+input .background .container .screen .screen-body .screen-body-item .app-form-control:focus {
+  border-bottom-color: #fff;
+}
+.form-container .background .container .screen .screen-body .screen-body-item .app-form-button,
+button .background .container .screen .screen-body .screen-body-item .app-form-button,
+input .background .container .screen .screen-body .screen-body-item .app-form-button {
+  background: none;
+  border: none;
+  color: #29d0fd;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+.form-container .background .container .screen .screen-body .screen-body-item .app-form-button:hover,
+button .background .container .screen .screen-body .screen-body-item .app-form-button:hover,
+input .background .container .screen .screen-body .screen-body-item .app-form-button:hover {
+  color: hsl(323deg, 21%, 16%);
+}
+.form-container .background .container .screen .screen-body .screen-body-item.left,
+button .background .container .screen .screen-body .screen-body-item.left,
+input .background .container .screen .screen-body .screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+.form-container .background .container .screen .screen-body .screen-body-item.left .app-title:after,
+button .background .container .screen .screen-body .screen-body-item.left .app-title:after,
+input .background .container .screen .screen-body .screen-body-item.left .app-title:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 25px;
+  height: 4px;
+  background: #29d0fd;
+}
+.form-container .background .container .screen .screen-body .screen-body-item.left .app-title,
+button .background .container .screen .screen-body .screen-body-item.left .app-title,
+input .background .container .screen .screen-body .screen-body-item.left .app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #29d0fd;
+  font-size: 26px;
+}
+.form-container .background .container .screen .screen-body .screen-body-item.left .app-contact,
+button .background .container .screen .screen-body .screen-body-item.left .app-contact,
+input .background .container .screen .screen-body .screen-body-item.left .app-contact {
+  margin-top: auto;
+  font-size: 8px;
+  color: #29d0fd;
+}
+
+@media screen and (max-width: 520px) {
+  .screen-body {
+    flex-direction: column;
+  }
+
+  .screen-body-item.left {
+    margin-bottom: 30px;
+  }
+
+  .app-title {
+    flex-direction: row;
+  }
+
+  .app-title span {
+    margin-right: 12px;
+  }
+
+  .app-title:after {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .screen-body {
+    padding: 40px;
+  }
+
+  .screen-body-item {
+    padding: 0;
+  }
+}
+.success-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.success-container h1 {
+  font-family: "Cairo", sans-serif;
+  font-size: 4em;
+}
+
 footer {
   display: flex;
   padding-left: 5%;

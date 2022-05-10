@@ -12,7 +12,7 @@ header {
   nav {
     div {
 
-      a:hover {
+      .animation-nav:hover {
         border-bottom: 2px solid $lightBlue;
       }
 
@@ -45,6 +45,7 @@ header {
 
 .search {
   position: absolute;
+  top: 10px;
   right: 5%;
   padding-top: 30px;
 
