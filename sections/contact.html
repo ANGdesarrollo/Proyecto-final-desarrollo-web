@@ -5,7 +5,24 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Title</title>
+    <!--    FAVICON-->
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
+    <link rel="manifest" href="../images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>GameOn | Contact</title>
     <!--    LINK CSS-->
     <link rel="stylesheet" href="../css/style.css">
     <!--    LINK BOOTSTRAP CSS-->
@@ -18,7 +35,7 @@
 </head>
 <body>
 
-<div class="container-contact">
+<div class="container-grid-contact">
 
 
     <!--HEADER-->
@@ -101,63 +118,70 @@
 
     <!--MAIN CONTENT-->
 
-    <!--FORM-->
-
-    <div class="form-container">
-        <div class="background">
-            <div class="container">
-                <div class="screen">
-                    <div class="screen-header">
-                        <div class="screen-header-left">
-                            <div class="screen-header-button close"></div>
-                            <div class="screen-header-button maximize"></div>
-                            <div class="screen-header-button minimize"></div>
-                        </div>
-                        <div class="screen-header-right">
-                            <div class="screen-header-ellipsis"></div>
-                            <div class="screen-header-ellipsis"></div>
-                            <div class="screen-header-ellipsis"></div>
-                        </div>
-                    </div>
-                    <div class="screen-body">
-                        <div class="screen-body-item left">
-                            <div class="app-title">
-                                <span>CONTACT</span>
-                                <span>US</span>
-                            </div>
-                            <div class="app-contact">CONTACT INFO : +54 (291) 5343707</div>
-                        </div>
-                        <div class="screen-body-item">
-                            <form action="../php/form.php" method="POST" class="app-form">
-                                <div class="app-form-group">
-                                    <label for="name">Name</label>
-                                    <input id="name" class="app-form-control" placeholder="Ej: Alexis Graff" name="name" required>
-                                </div>
-                                <div class="app-form-group">
-                                    <label for="email">Email</label>
-                                    <input id="email" class="app-form-control" placeholder="Ej: gameon@gmail.com" name="email" required>
-                                </div>
-                                <div class="app-form-group">
-                                    <label for="contact">Phone Number</label>
-                                    <input id="contact" class="app-form-control" placeholder="Ej: +54 (291) 5343707" name="contact">
-                                </div>
-                                <div class="app-form-group message">
-                                    <label for="message">Message</label>
-                                    <input id="message" class="app-form-control" placeholder="Write Here" name="message">
-                                </div>
-                                <div class="app-form-group buttons">
-                                    <button type="submit" class="app-form-button">CANCEL</button>
-                                    <button type="submit" class="app-form-button">SEND</button>
-                                </div>
-
-                            </form>
-                        </div>
+    <section class="container-main-contact">
+        <div class="container">
+            <div class="contact-info">
+                <ul class="contact-info-a">
+                    <li><a href="https://api.whatsapp.com/send?phone=542915343707"><img
+                            src="../images/footer-images/whatsapp-footer.webp" alt="Icon Whatsapp"></a>
+                    </li>
+                    <li><a href="https://www.facebook.com/"><img src="../images/footer-images/facebook-footer.webp"
+                                                                 alt="Icon Facebook"></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/"><img src="../images/footer-images/instagram-footer.webp"
+                                                                  alt="Icon Instagram"></a>
+                    </li>
+                    <li><a href="https://goo.gl/maps/LArbc5hoxP28NNdk9"><img
+                            src="../images/footer-images/location-footer.webp" alt="Icon Location"></a></li>
+                </ul>
+            </div>
+            <div class="form-section">
+                <div class="decoration-main-contact">
+                    <div class="left-part">
+                        <span class="span1"></span>
+                        <span class="span2"></span>
+                        <span class="span3"></span>
                     </div>
                 </div>
+                <div class="info-form">
+                    <div class="contact-us">
+                        <div class="app-title">
+                            <span class="span-block">CONTACT</span>
+                            <span class="app-title-border">US</span>
+                        </div>
+                    </div>
+                    <form action="../php/form.php" method="POST" class="app-form">
+                        <div class="app-form-group">
+                            <label for="name">Name</label>
+                            <input id="name" class="app-form-control" placeholder="Ej: Alexis Graff"
+                                   name="name" required>
+                        </div>
+                        <div class="app-form-group">
+                            <label for="email">Email</label>
+                            <input id="email" class="app-form-control" placeholder="Ej: gameon@gmail.com"
+                                   name="email" required>
+                        </div>
+                        <div class="app-form-group">
+                            <label for="contact">Phone Number</label>
+                            <input id="contact" class="app-form-control" placeholder="Ej: +54 (291) 5343707"
+                                   name="contact">
+                        </div>
+                        <div class="app-form-group message">
+                            <label for="message">Message</label>
+                            <input id="message" class="app-form-control" placeholder="Write Here"
+                                   name="message">
+                        </div>
+                        <div class="app-form-group buttons">
+                            <button type="submit" class="app-form-button">CANCEL</button>
+                            <button type="submit" class="app-form-button">SEND</button>
+                        </div>
+                </div>
+
+                </form>
             </div>
         </div>
 
-    </div>
+    </section>
 
     <!--FOOTER-->
 
@@ -174,10 +198,12 @@
             </div>
             <div class="footer-c">
                 <ul>
-                    <li><a href="#"><img src="../images/footer-images/location-footer.webp" alt="Icon of location"></a>
+                    <li><a href="https://goo.gl/maps/LArbc5hoxP28NNdk9"><img src="../images/footer-images/location-footer.webp" alt="Icon of location"></a>
                     </li>
-                    <li><a href="#"><img src="../images/footer-images/whatsapp-footer.webp" alt="Icon of Whatsapp"></a></li>
-                    <li><a href="#"><img src="../images/footer-images/email-footer.webp" alt="Icon of Whatsapp"></a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=542915343707"><img src="../images/footer-images/whatsapp-footer.webp" alt="Icon of Whatsapp"></a>
+                    </li>
+                    <li><a href="contact.html"><img src="../images/footer-images/email-footer.webp" alt="Icon of email"></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -185,9 +211,9 @@
         <div class="footer-d">
 
             <ul class="footer-d-a">
-                <li><a class="img-footer-fb" href="#"><img src="../images/footer-images/facebook-footer.webp"
+                <li><a class="img-footer-fb" href="https://www.facebook.com/"><img src="../images/footer-images/facebook-footer.webp"
                                                            alt="Facebook icon"></a></li>
-                <li><a class="img-footer-ig" href="#"><img src="../images/footer-images/instagram-footer.webp"
+                <li><a class="img-footer-ig" href="https://www.instagram.com/"><img src="../images/footer-images/instagram-footer.webp"
                                                            alt="Instagram icon"></a></li>
             </ul>
 
@@ -198,11 +224,8 @@
             </div>
         </div>
     </footer>
+
 </div>
-
-
-<!--<script src="./javascript/javascript.js"></script>-->
-
 
 <!--LINK BOOTSTRAP JS-->
 
