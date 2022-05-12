@@ -1,0 +1,15 @@
+.container-shopping-cart {
+  font-family: 'Cairo', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container-base {
+    display: flex;
+    align-items: center;
+  }
+  h2 {
+    margin: 100px;
+    font-size: 2em;
+  }
+}

@@ -1,10 +1,47 @@
+@import '../base/var';
+
 .success-container {
+  font-family: 'Cairo', sans-serif;
+  margin: 5%;
   height: 100vh;
   display: flex;
   justify-content: center;
-  h1 {
-    font-family: 'Cairo', sans-serif;
-    font-size: 4em;
-  }
+  .container-confirmation {
+    box-shadow: 0 5px 10px currentColor;
+    background-color: $grayTrans;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    border: 2px solid white;
+    .img-success {
+      padding: 40px 40px 20px 40px;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 20%;
+      }
+    }
+    .awesome {
+      padding: 5px;
+    }
 
+    .description-success {
+      padding: 20px;
+    }
+
+    .button-ok {
+      padding: 40px;
+      a {
+        font-weight: bold;
+        font-size: 1em;
+        text-decoration: none;
+        color: $black;
+        padding: 5px 70px;
+        background-color: $lightBlue;
+      }
+    }
+  }
 }
+

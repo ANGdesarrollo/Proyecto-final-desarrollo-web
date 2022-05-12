@@ -1,5 +1,6 @@
 @import '../base/var';
 
+
 .general-products-container {
   .carousel-products {
     grid-area: carousel;
@@ -138,6 +139,52 @@
   }
 }
 
+.search-products {
+  position: absolute;
+  top: 20px;
+  right: 5%;
+  padding-top: 30px;
+
+  input {
+    background: transparent;
+    border: none;
+    width: 0;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: $black;
+    outline: none;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+  }
+
+  .btn-search-products {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    img {
+      width: 50%;
+    }
+  }
+}
+
+.search-products:hover input {
+  background-color: white;
+  width: 150px;
+}
+
+.search-products input:focus {
+  width: 240px;
+
+}
 @media screen and(max-width: 992px) {
   .general-products-container {
     .products-grid {
@@ -161,6 +208,27 @@
       }
     }
   }
+  .search-products {
+    padding-top: 20px;
+    right: 10%;
+    padding-right: 40px;
+
+    input {
+      height: 50px;
+    }
+
+    .btn-search-products {
+      top: 15px;
+      right: 40px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .search-products:hover input {
+    width: 240px;
+  }
 }
 
 @media screen and(max-width: 576px) {
@@ -180,5 +248,25 @@
       }
     }
   }
+  .search-products {
+    padding-top: 10px;
+    right: 10%;
+    padding-right: 40px;
 
+    input {
+      height: 40px;
+    }
+
+    .btn-search-products {
+      top: 5px;
+      right: 40px;
+
+      img {
+        width: 75%;
+      }
+    }
+  }
+  .search-products:hover input {
+    width: 150px;
+  }
 }
