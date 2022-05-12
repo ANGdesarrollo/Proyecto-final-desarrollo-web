@@ -201,10 +201,15 @@
 
 @media screen and (max-width:992px) {
   .container-grid-contact {
-    grid-template-rows: auto 75vh auto;
+    grid-template-rows: auto 100% auto;
     .container-main-contact {
       .container {
         flex-wrap: wrap;
+
+        .form-section {
+          margin: 0;
+        }
+
 
         .contact-info {
           height: auto;
@@ -221,11 +226,12 @@
 
 @media screen and (max-width: 576px) {
   .container-grid-contact {
-    grid-template-rows: auto 90vh auto;
+    grid-template-rows: auto;
     .container-main-contact {
+      margin: 3px 3px 0 3px;
       .container {
         margin: 0;
-        padding: 3% 0 3% 0;
+        padding: 3% 0 0 0;
         flex-wrap: wrap;
 
         .contact-info {
@@ -245,21 +251,31 @@
         }
 
         .info-form {
-          justify-content: center;
+          max-width: 100%;
+          justify-content: flex-start;
           flex-wrap: wrap;
           display: flex;
           .contact-us {
+            width: 100%;
             padding-top: 10px;
             padding-left: 0;
             display: flex;
             font-size: 1.5em;
+            .app-title {
+              padding-top: 0;
+              padding-left: 0;
+              display: flex;
+              flex-direction: column;
+              font-size: 1em;
+              align-items: flex-start;
+            }
 
             .span-block {
               display: inline;
             }
           }
           .app-form {
-            padding: 20px 100px;
+            padding: 20px 0;
           }
         }
       }

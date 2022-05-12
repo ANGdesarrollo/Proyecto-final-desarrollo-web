@@ -212,20 +212,20 @@ header {
     }
   }
   .search {
-    padding-top: 20px;
-    right: 10%;
-    padding-right: 40px;
+    padding-top: 5px;
+    right: 25%;
+    padding-right: 0;
 
     input {
-      height: 40px;
+      height: 30px;
     }
 
     .btn-search {
-      top: 10px;
-      right: 40px;
+      top: -10px;
+      right: 0;
 
       img {
-        width: 75%;
+        width: 60%;
       }
     }
   }

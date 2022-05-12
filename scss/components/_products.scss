@@ -234,7 +234,6 @@
 @media screen and(max-width: 576px) {
   .general-products-container {
     .products-grid {
-
       .video-container-a {
         display: none;
       }
@@ -249,9 +248,8 @@
     }
   }
   .search-products {
-    padding-top: 10px;
-    right: 10%;
-    padding-right: 40px;
+    padding: 0;
+    right: 30%;
 
     input {
       height: 40px;
@@ -259,10 +257,10 @@
 
     .btn-search-products {
       top: 5px;
-      right: 40px;
+      right: 0;
 
       img {
-        width: 75%;
+        width: 60%;
       }
     }
   }

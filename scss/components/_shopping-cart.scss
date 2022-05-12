@@ -13,3 +13,32 @@
     font-size: 2em;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .container-shopping-cart {
+    .dinosaur {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container-base {
+      justify-content: center;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      img {
+        max-width: 60%;
+      }
+    }
+    .text-shopping-cart {
+      text-align: center;
+      h2 {
+        margin: 0;
+        font-size: 1em;
+      }
+
+    }
+
+  }
+
+}
