@@ -1116,6 +1116,9 @@ main .description-return-policy p {
   display: flex;
   justify-content: center;
 }
+.container-main-contact .container-log-in-mobile {
+  display: none;
+}
 .container-main-contact .form-section-log-in {
   margin-right: 4%;
   width: 85%;
