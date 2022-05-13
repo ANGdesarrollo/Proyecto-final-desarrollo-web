@@ -168,7 +168,7 @@ header nav div .dropdown-menu {
 
   .search {
     padding-top: 5px;
-    right: 25%;
+    right: 20%;
     padding-right: 0;
   }
   .search input {
@@ -184,6 +184,12 @@ header nav div .dropdown-menu {
 
   .search:hover input {
     width: 150px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .search {
+    padding: 0;
+    right: 25%;
   }
 }
 .fixed-menu {

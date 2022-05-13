@@ -213,7 +213,7 @@ header {
   }
   .search {
     padding-top: 5px;
-    right: 25%;
+    right: 20%;
     padding-right: 0;
 
     input {
@@ -231,6 +231,14 @@ header {
   }
   .search:hover input {
     width: 150px;
+  }
+}
+
+@media screen and(max-width: 300px) {
+  .search {
+    padding: 0;
+    right: 25%;
+
   }
 }
 
