@@ -809,7 +809,7 @@ header nav div .dropdown-menu {
 
   .search-products {
     padding: 0;
-    right: 30%;
+    right: 22%;
   }
   .search-products input {
     height: 40px;
@@ -824,6 +824,12 @@ header nav div .dropdown-menu {
 
   .search-products:hover input {
     width: 150px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .search-products {
+    padding: 0;
+    right: 25%;
   }
 }
 main {
